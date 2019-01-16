@@ -12,7 +12,7 @@ cmake  .  -DCMAKE_INSTALL_PREFIX=/opt/mysql-5.6 -DMYSQL_DATADIR=/opt/mysql-5.6/d
 
 make && make install  &&
 
-
+ln -s /opt/mysql-5.6/  /opt/mysql &&
 find /data -type f -name "mysql"|xargs chmod 755 &&
 find /data -type f -name "mysql"|ls -l && 
 
