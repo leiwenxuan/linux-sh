@@ -5,6 +5,6 @@ tar -zxvf Python-3.6.8.tgz &&
 cd  /opt/Python-3.6.8 &&
 ./configure --prefix=/opt/python36/ &&
 make && make install &&
-echo "export PTAH=/opt/python36/bin:$PTAH" >> /etc/profile  &&
+echo "export PATH=/opt/python36/bin:$PATH" >> /etc/profile  &&
 source /etc/profile  
 
